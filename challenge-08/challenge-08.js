@@ -54,7 +54,7 @@ vai efetuar. Será uma string com os valores `+`, `-`, `*`, `/` ou `%`;
   "Operação inválida."
 */
 function calculator(operador) {
-  function operacao(n1,n2) {
+  return function operacao(n1,n2) {
     switch(operador) {
       case '+':
         resultado = n1 + n2;
@@ -76,8 +76,7 @@ function calculator(operador) {
     }
     return 'Resultado da operação: '+ n1 + ' '+ operador + ' ' + n2 + ' = ' + resultado + '.';
     };
-    return operacao;
-  };
+  }
   
 
 /*
